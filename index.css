@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    box-sizing: content-box;
+    background-image: url(./image/laravel.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    height: 55vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-bottom: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.pl-img{
+    width: 30%;
+}
+
+.head-cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.purpose{
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.edu{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.edu-head{
+    font-size: 30px;
+    color: rgb(137, 138, 139);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.edu-head::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid rgb(137, 138, 139);
+    width: 100%;
+}
+
+.edu-title{
+    display: inline-block;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: white; 
+    padding: 10px; 
+    z-index: 3;
+}
+
+.edu-cont{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.card1, .card2{
+    width: 275px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.certifivate3, .certifivate2, .certifivate1{
+    width: 275px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.certifivate3 .cer-des, .certifivate2 .cer-des, .certifivate1 .cer-des{
+    text-align: justify;
+}
+
+.certifivate3 .butt, .certifivate2 .butt, .certifivate1 .butt{
+    text-align: center;
+}
+
+.prjt{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.prjt-head{
+    font-size: 30px;
+    color: rgb(137, 138, 139);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.prjt-head::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid rgb(137, 138, 139);
+    width: 100%;
+}
+
+.prjt-title{
+    display: inline-block;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: white; 
+    padding: 10px; 
+    z-index: 3;
+}
+
+.prjt-cont{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.exp-cont{
+    width: 90%;
+    margin: auto;
+    border: 2px solid rgb(137, 138, 139);
+    background-color: rgb(216, 216, 216);
+    padding: 30px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+    color: white;
+}
+
+.ftr{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ftr a{
+    color: white;
+}
+
+.ftr > div{
+    width: 30%;
+    display: inline-block;
+}
+
+.ftr h2{
+    margin-bottom: 20px;
+}
+
+.ftr li{
+    margin-bottom: 15px;
+}
+
+.ftr i{
+    margin-left: 15px;
+}
+
+.follow-ico{
+    display: flex; justify-content: space-between; width: 50%; font-size: 30px;
+}
+
+@media screen and (max-width: 1370.400px){
+    .my-name{
+        font-size: 30px;
+    }
+
+    .Specialist{
+        font-size: 25px;
+    }
+
+    .purpose{
+        padding: 40px;
+    }
+
+    .pl-img {
+        width: 32%;
+    }
+
+    .follow-ico{
+        width: 75%;
+    }    
+}
+
+@media screen and (max-width: 855px) {
+    .edu-cont, .prjt-cont{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1, .card2, .certifivate1, .certifivate2, .certifivate3{
+        margin-bottom: 20px;
+    }
+
+    .my-name{
+        font-size: 20px;
+    }
+
+    .Specialist{
+        font-size: 18px;
+    }
+
+    .purpose{
+        padding: 10px;
+        width: 95%;
+    }
+
+    .ftr{
+        flex-direction: column;
+    }
+
+    .ftr > div{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .pl-img {
+        width: 38%;
+    }
+
+    .follow-ico{
+        width: 50%;
+    }
+
+    .prjt-head{
+        margin-bottom: 40px;
+    }
+
+}
