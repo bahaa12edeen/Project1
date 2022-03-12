@@ -19,7 +19,7 @@ Create Our Portfolio
 
 ## Project Overview
 
-Portfolio web page contains languages we learned and projects did me do,  personal photo,  my full name, objective, Education, experience, personal information (email, phone number)
+Portfolio web page contains languages we learned and Projects i've done,  personal photo,  my full name, objective, Education, experience, personal information (email, phone number)
 
 ## Project Design
 
