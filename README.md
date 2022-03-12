@@ -26,10 +26,10 @@ Portfolio web page contains languages we learned and projects did me do,  person
 * We took into account that the page is responsive
 
 1. Project Wireframe
-   * [Wireframe Link](https://bahaa12edeen.github.io/Project1/mockup/wirframe-#1.pdf)
+   * [Wireframe Link](https://github.com/bahaa12edeen/Project1/blob/main/mockup/wirframe-%231.pdf)
 
 1. Project Mockup
-   * [Mockup Link](https://bahaa12edeen.github.io/Project1/mockup/mockup-#1.pdf)
+   * [Mockup Link](https://github.com/bahaa12edeen/Project1/blob/main/mockup/mockup-%231.pdf)
 
 1. Project Folder
    * [Folder Link](https://github.com/bahaa12edeen/Project1.git)
