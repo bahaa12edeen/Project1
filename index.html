@@ -7,10 +7,33 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/aca8d5a1fa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>
+        <nav id="nav">
+            <div class="logo">
+                Portfolio
+            </div>
+            <div class="dor">
+                <a class="move" id="move1" href="#">
+                    <div class="dr" id="dr1">Home</div>
+                </a>
+                <a class="move" id="move2" href="#eduction">
+                    <div class="dr" id="dr2">Eduction</div>
+                </a>
+                <a class="move" id="move3" href="#project">
+                    <div class="dr" id="dr3">Projects</div>
+                </a>
+                <a class="move" id="move4" href="#experience">
+                    <div class="dr" id="dr4">Experience</div>
+                </a>
+            </div>
+        </nav>
+
         <div class="head-cont">
             <div>
                 <img src="./image/pers-modified.png" class="pl-img" alt="">
@@ -27,22 +50,23 @@
     <main>
         <div class="purpose">
             <span>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using <span style="color: red;">Lorem Ipsum</span> is that it has a more-or-less normal <span style="color: red;">distribution</span>.
+                A Full-Stack Web Developer seeking to work in a big technology company to develop my personal and technical skills and take the company to a next level and provide a better experience for the company's clients
             </span>
         </div>
         
         <div class="edu">
-            <div class="edu-head">                
+            <div class="edu-head" id="eduction">                
                 <section class="edu-title">EDUCATION</section>                
             </div>
             <div class="edu-cont">
                 <div class="certifivate3">
                     <div>
                         <h5 class="cer-title">Full-Stack Web Developer</h5>
-                        <p class="cer-des">
-                            I started working as an intern at <a href="https://www.orange.jo/en/csr/pages/coding-academy.aspx">Orange-Coding-Academy</a> in collaboration with <a href="https://simplon.co/">Simplon</a> in <strong style="color: #fd510d;">February, 2022</strong> and <strong style="color: #fd510d;">continues today</strong>
-                        </p>
+
                     </div>
+                    <p class="cer-des">
+                        I started working as an trainee at <a target="_blank" href="https://www.orange.jo/en/csr/pages/coding-academy.aspx">Orange Coding Academy</a> in collaboration with <a target="_blank" href="https://simplon.co/">Simplon</a> in <strong style="color: #fd510d;">February, 2022</strong> to <strong style="color: #fd510d;">present</strong>
+                    </p>
                     <p class="butt">
                         <button type="button" class="btn btn-outline-primary">Read More</button>
                     </p>
@@ -51,10 +75,10 @@
                 <div class="certifivate2">
                     <div>
                         <h5 class="cer-title">Software Engineering</h5>
-                        <p class="cer-des">
-                            I started my academic career in <strong style="color: #fd510d;">February-2018</strong>, I studied Software Engineering in IT Department at <a href="http://www.aut.edu.jo/en">Aqaba University of Technology</a> within four years and completed it successfully in <strong style="color: #fd510d;">January-2022</strong>.
-                        </p>
                     </div>
+                    <p class="cer-des">
+                        I started my academic career in <strong style="color: #fd510d;">February-2018</strong>, I studied Software Engineering in IT Department at <a target="_blank" href="http://www.aut.edu.jo/en">Aqaba University of Technology</a> within four years and completed it successfully in <strong style="color: #fd510d;">January-2022</strong>.
+                    </p>
                     <p class="butt">
                         <button type="button" class="btn btn-outline-primary">Read More</button>
                     </p>
@@ -64,7 +88,7 @@
                     <div>
                         <h5 class="cer-title">English Access Program</h5>
                         <p class="cer-des">
-                            Participation in the <a href="https://www.facebook.com/groups/WA.ACCESS/">English Access</a> Microscholarship Program <strong style="color: #fd510d;">March, 2014</strong> / Certificate of Completion for completing the two-year Intensive English Access Small Scholarship Program sponsored by Embassy University (Amman) was presented in <strong style="color: #fd510d;">April, 2015</strong>.
+                            Participation in the <a target="_blank" href="https://www.facebook.com/LIFEcenterAqaba">English Access</a> Microscholarship Program <strong style="color: #fd510d;">March, 2014</strong> / Certificate of Completion for completing the two-year Intensive English Access Small Scholarship Program sponsored by Embassy University (Amman) was presented in <strong style="color: #fd510d;">April, 2015</strong>.
                         </p>    
                     </div>
                     <p class="butt">
@@ -76,30 +100,30 @@
 
         <div class="prjt">
             <div class="prjt-head">                
-                <section class="prjt-title">RECENT PROJECTS</section>                
+                <section class="prjt-title"  id="project">RECENT PROJECTS</section>                
             </div>
             <div class="prjt-cont">
                 <div class="card1">
                     <div class="image">
-                        <img src="./image/images.jpg" alt="">
+                        <img src="./image/download.png" width="257px" alt="">
                     </div>
                     <div class="description">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident doloribus ex nostrum. Officiis, quae excepturi! Neque ab libero porro suscipit repellendus culpa eligendi aperiam repellat non id, asperiores reiciendis!
+                            The project of online courses consists of several stages: subject selection, topic selection, courses and units, lessons and tests, and there is a feature to follow the student's achievement.
                         </p>
-                        <div class="prj-link"><a href="https://myawesomeprojects.000webhostapp.com/">Online Corses Link</a></div>
+                        <div class="prj-link"><a target="_blank" href="https://myawesomeprojects.000webhostapp.com/">Online Corses Link</a></div>
                     </div>
                 </div>
 
                 <div class="card2">
                     <div class="image">
-                        <img src="./image/images.jpg" alt="">
+                        <img src="./image/vb.png" alt="">
                     </div>
                     <div class="description">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident doloribus ex nostrum. Officiis, quae excepturi! Neque ab libero porro suscipit repellendus culpa eligendi aperiam repellat non id, asperiores reiciendis!
+                            The airline ticket reservation project consists of four stages: search, flight selection, passenger data entry, and payment. Various technologies were used in this project such as HTML, CSS, JAVASCRIPT, PHP, and MY-SQL.
                         </p>
-                        <div class="prj-link"><a href="https://myawesomeprojects.000webhostapp.com/airReserve/">Booking Airline Tickets Link</a></div>
+                        <div class="prj-link"><a target="_blank" href="https://myawesomeprojects.000webhostapp.com/airReserve/">Booking Airline Tickets Link</a></div>
                     </div>
                 </div>
             </div>
@@ -107,7 +131,7 @@
 
         <div class="edu">
             <div class="edu-head">                
-                <section class="edu-title">EXPERIENCE</section>                
+                <section class="edu-title" id="experience">EXPERIENCE</section>                
             </div>
             <div class="exp-cont">
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
@@ -120,7 +144,7 @@
             <div>
                 <h2>CONTACT</h2>
                 <ul>
-                    <li>+962 778089189</li>
+                    <li>+962 778089159</li>
                     <li>baldeen229@gmail.com</li>
                 </ul>
             </div>
@@ -142,6 +166,42 @@
         </div>
         <div class="right"></div>
     </footer>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var crl = window.scrollY;
+
+            if(crl >= 111.2){
+                document.getElementById("dr1").style.setProperty("--first", "black");
+                document.getElementById("dr2").style.setProperty("--first", "black");
+                document.getElementById("dr3").style.setProperty("--first", "black");
+                document.getElementById("dr4").style.setProperty("--first", "black");
+
+                document.getElementById("nav").style.color = "black";
+                document.getElementById("move1").setAttribute("class", "scrl");
+                document.getElementById("move2").setAttribute("class", "scrl");
+                document.getElementById("move3").setAttribute("class", "scrl");
+                document.getElementById("move4").setAttribute("class", "scrl");
+
+                document.getElementById("nav").style.backgroundColor = "white";
+                document.getElementById("nav").style.boxShadow = "0 1px 30px 0.1px #6b6b6b";
+            }else{
+                document.getElementById("dr1").style.setProperty("--first", "white");
+                document.getElementById("dr2").style.setProperty("--first", "white");
+                document.getElementById("dr3").style.setProperty("--first", "white");
+                document.getElementById("dr4").style.setProperty("--first", "white");
+
+                document.getElementById("nav").style.color = "white";
+                document.getElementById("move1").setAttribute("class", "move");
+                document.getElementById("move2").setAttribute("class", "move");
+                document.getElementById("move3").setAttribute("class", "move");
+                document.getElementById("move4").setAttribute("class", "move");
+
+                document.getElementById("nav").style.backgroundColor = "unset";
+                document.getElementById("nav").style.boxShadow = "none";
+            }
+        });
+    </script>
 </body>
 </html>
 

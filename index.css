@@ -6,6 +6,56 @@ body{
     margin: 0;
 }
 
+.logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    z-index: 4;
+    padding: 25px 20px;
+    box-shadow: 0 1px 50px 1px black;
+}
+
+.dor{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dr{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.dr::before{
+    content: "";
+    width: 0%;
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-bottom: 1px solid var(--first);
+
+}
+/* :hover */
+
+.dr:hover::before{
+    width: 100%;
+    
+}
+
 header{
     box-sizing: content-box;
     background-image: url(./image/laravel.jpg);
@@ -93,22 +143,44 @@ main{
 }
 
 .card1, .card2{
+    box-sizing: content-box;
     width: 275px;
     text-align: center;
     margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
 }
 
+.card1:hover, .card2:hover{
+    box-shadow: 1px 1px 30px 1px #a8a8a8;
+    }
+
+
 .certifivate3, .certifivate2, .certifivate1{
-    width: 275px;
+    width: 30%;
     /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 10px;
+    padding: 15px;
+
+}
+
+.certifivate3:hover, .certifivate2:hover, .certifivate1:hover{
+    box-shadow: 1px 1px 30px 1px #a8a8a8;
+    background-color: aliceblue;
+}
+
+.cer-title{
+    text-align: center;
+    margin-bottom: 15px
 }
 
 .certifivate3 .cer-des, .certifivate2 .cer-des, .certifivate1 .cer-des{
-    text-align: justify;
+    text-align: center;
 }
 
 .certifivate3 .butt, .certifivate2 .butt, .certifivate1 .butt{
@@ -204,7 +276,15 @@ footer{
 }
 
 .follow-ico{
-    display: flex; justify-content: space-between; width: 50%; font-size: 30px;
+    display: flex; justify-content: space-between; width: 35%; font-size: 30px;
+}
+
+.image{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 1370.400px){
@@ -225,7 +305,7 @@ footer{
     }
 
     .follow-ico{
-        width: 75%;
+        width: 50%;
     }    
 }
 
@@ -266,11 +346,25 @@ footer{
     }
 
     .follow-ico{
-        width: 50%;
+        width: 35%;
     }
 
     .prjt-head{
         margin-bottom: 40px;
     }
 
+}
+
+
+.scrl{
+    background-color: white;
+    color: black;
+}
+
+:root{
+    --first: white;
+}
+
+.move, .move:hover{
+    color: var(--first);
 }
