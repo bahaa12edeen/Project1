@@ -32,7 +32,7 @@ Portfolio web page contains languages we learned and Projects i've done,  person
    * [Mockup Link](https://github.com/bahaa12edeen/Project1/blob/main/mockup/mockup-%231.pdf)
 
 1. Project Folder
-   * [Folder Link](https://github.com/bahaa12edeen/Project1.git)
+   * [Repo Link](https://github.com/bahaa12edeen/Project1.git)
 
 1. Live Code
    * [Live Link](https://bahaa12edeen.github.io/Project1/)

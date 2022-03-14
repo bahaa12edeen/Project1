@@ -22,7 +22,7 @@ nav{
     left: 0;
     right: 0;
     /* width: 100%; */
-    z-index: 4;
+    z-index: 5;
     padding: 25px 20px;
 }
 
@@ -150,6 +150,7 @@ main{
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
+    cursor:default;
 }
 
 .card1:hover, .card2:hover{
@@ -165,7 +166,7 @@ main{
     justify-content: space-between;
     margin: 0 10px;
     padding: 15px;
-
+    cursor:default;
 }
 
 .certifivate3:hover, .certifivate2:hover, .certifivate1:hover{
@@ -180,6 +181,7 @@ main{
 
 .certifivate3 .cer-des, .certifivate2 .cer-des, .certifivate1 .cer-des{
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .certifivate3 .butt, .certifivate2 .butt, .certifivate1 .butt{
@@ -237,7 +239,7 @@ main{
     border: 2px solid rgb(137, 138, 139);
     background-color: rgb(216, 216, 216);
     padding: 30px;
-    text-align: center;
+    /* text-align: center; */
     color: rgb(75, 75, 75);
 }
 
@@ -316,6 +318,7 @@ footer{
 
     .card1, .card2, .certifivate1, .certifivate2, .certifivate3{
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .my-name{
@@ -352,6 +355,10 @@ footer{
         margin-bottom: 40px;
     }
 
+    .dor {
+        width: 100%;
+    }
+
 }
 
 
@@ -367,3 +374,69 @@ footer{
 .move, .move:hover{
     color: var(--first);
 }
+
+.exp1{
+    display: flex;
+    flex-direction: row;
+}
+
+.exp2{
+    display: flex;
+    flex-direction: row;
+}
+
+.exp3{
+    display: flex;
+    flex-direction: row;
+    /* list-style-type: disc; */
+}
+
+@media screen and (max-width: 820.400px) {
+    .exp-cont{
+        padding: 15px;
+    }
+
+    .exp-cont h3{
+        font-size: 21px;
+    }
+
+    .edu-head{
+        margin: 0 0 50px 0;
+        width: 100%;
+    }
+
+    .exp-cont{
+        width: 100%;
+        margin: 0;
+    }
+
+    .prjt-head{
+        margin: 0;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
+
+.pop{
+    position: fixed;
+    background-color: #000000cc;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+}
+
+.inside-pop{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 90%;
+    background-color: rgb(216, 216, 216);
+    z-index: 5;
+    padding: 20px;
+    /* padding-bottom: 0; */
+}
+
