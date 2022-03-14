@@ -359,6 +359,7 @@ footer{
         width: 100%;
     }
 
+
 }
 
 
@@ -369,6 +370,7 @@ footer{
 
 :root{
     --first: white;
+    --rotat: 0deg;
 }
 
 .move, .move:hover{
@@ -391,9 +393,31 @@ footer{
     /* list-style-type: disc; */
 }
 
+.exp-cont li{
+    margin-top: 10px;
+}
+
+.exp-cont img{
+    margin-top: 10px;
+}
+
+
 @media screen and (max-width: 820.400px) {
     .exp-cont{
-        padding: 15px;
+        padding: 10px;
+    }
+
+    .exp-cont li{
+        margin-top: 10px;
+    }
+
+    .exp-cont img{
+        width: 36px;
+        margin-top: 12px;
+    }
+
+    .exp-cont ul{
+        padding-left: 15px;
     }
 
     .exp-cont h3{
@@ -440,3 +464,23 @@ footer{
     /* padding-bottom: 0; */
 }
 
+.menu{
+    display: none;
+}
+
+.rrow{
+    display: inline-block;
+    margin-left: 7px;
+    color: var(--first);
+    transition: all 0.5s linear;
+    transform: rotate(var(--rotat));
+
+}
+
+/**************************************************************/
+
+@media screen and (max-width: 560px) {
+    #move1, #move2, #move3, #move4{
+        display: none;
+    }
+}

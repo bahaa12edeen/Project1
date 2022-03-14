@@ -18,6 +18,12 @@
             <div class="logo">
                 Portfolio
             </div>
+            <div class="menu dr" id="menu">
+                
+                    <span>Menu</span>
+                    <div class="rrow" id="rrow"><i class="fa-solid fa-caret-down"></i></div>    
+                
+            </div>
             <div class="dor">
                 <a class="move" id="move1" href="#">
                     <div class="dr" id="dr1">Home</div>
@@ -68,7 +74,7 @@
                     </div>
                     <div>
                         <p class="cer-des">
-                            I started working as an intern at <a target="_blank" href="https://www.orange.jo/en/csr/pages/coding-academy.aspx">Orange Coding Academy</a> in collaboration with <a target="_blank" href="https://simplon.co/">Simplon</a> in <strong>February 2022</strong> to <strong>Present</strong>.
+                            I started working as an intern at <a target="_blank" href="https://www.orange.jo/en/csr/pages/coding-academy.aspx">Orange Coding Academy</a> in collaboration with <a target="_blank" href="https://simplon.co/">Simplon</a> in <strong style="color: #fd510d;">February 2022</strong> to <strong style="color: #fd510d;">Present</strong>.
                         </p>
                         <p class="butt">
                             <button type="button" class="btn btn-outline-primary">Read More</button>
@@ -298,6 +304,7 @@
                 document.getElementById("dr3").style.setProperty("--first", "black");
                 document.getElementById("dr4").style.setProperty("--first", "black");
                 document.getElementById("dr5").style.setProperty("--first", "black");
+                document.getElementById("menu").style.setProperty("--first", "black");
 
                 document.getElementById("nav").style.color = "black";
                 document.getElementById("move1").setAttribute("class", "scrl");
@@ -314,6 +321,7 @@
                 document.getElementById("dr3").style.setProperty("--first", "white");
                 document.getElementById("dr4").style.setProperty("--first", "white");
                 document.getElementById("dr5").style.setProperty("--first", "white");
+                document.getElementById("menu").style.setProperty("--first", "white");
 
                 document.getElementById("nav").style.color = "white";
                 document.getElementById("move1").setAttribute("class", "move");
@@ -339,6 +347,21 @@
                 f=0;
             }
         }
+
+        var k = 0;
+
+        document.getElementById("menu").onclick = function(){
+            console.log("k: "+k);
+            if(k == 0){
+                document.getElementById("rrow").style.setProperty("--rotat", "180deg");
+                k = 1;
+            }else{
+                document.getElementById("rrow").style.setProperty("--rotat", "0deg");
+                k = 0;
+            }
+        }
+
+        /***************************************************************************/
     </script>
 </body>
 </html>
