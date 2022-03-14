@@ -29,7 +29,7 @@ Portfolio web page contains languages we learned and Projects i've done,  person
    * [Wireframe Link](https://github.com/bahaa12edeen/Project1/blob/main/mockup/wirframe-%231.pdf)
 
 1. Project Mockup
-   * [Mockup Link](https://miro.com/app/board/uXzjVOGBBW6g=/?invite_link_id=927921900071)
+   * [Mockup Link](https://miro.com/app/board/uXjVOGBBW6g=/?invite_link_id=223803694188)
 
 1. Project Folder
    * [Repo Link](https://github.com/bahaa12edeen/Project1.git)
