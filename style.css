@@ -88,7 +88,7 @@ header{
     box-sizing: content-box;
     background-image: url(./image/laravel.jpg);
     background-size: cover;
-    height: 65vh;
+    height: 60vh;
     position: relative;
     top: 0;
     left: 0;
@@ -142,7 +142,7 @@ main{
 }
 
 .edu-head{
-    font-size: 30px;
+    font-size: 28px;
     color: rgb(137, 138, 139);
     width: 90%;
     margin: auto;
@@ -327,6 +327,12 @@ footer{
     margin-bottom: 16px;
 }
 
+@media screen and (max-height: 550px){
+    header{
+        height: 86vh;
+    }
+}
+
 @media screen and (max-width: 1236px){
     main{
         width: 100%;
@@ -466,10 +472,14 @@ footer{
         padding: 15px;
     }
 
-    .prjt-title{
-        font-size: 1.7rem;
-        width: 243px;
+    .prjt-title, .edu-title{
+        font-size: 23px;
+        width: max-content;
     }
+
+    /* .edu-title{
+        font-size: 23px;
+    } */
 
     .exp-cont{
         padding: 10px;
@@ -530,7 +540,7 @@ footer{
     z-index: 5;
     padding: 20px;
     height: 87%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .menu{
