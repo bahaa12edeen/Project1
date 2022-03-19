@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav id="nav">
-            <div class="logo">
+            <div class="logo" id="logo">
                 Portfolio
             </div>
             <div class="menu dr" id="menu">
@@ -27,22 +27,31 @@
                     <div class="rrow" id="rrow"><i class="fa-solid fa-caret-down"></i></div>    
                 
             </div>
-            <div class="dor">
+            <div class="dor" id="dor">
                 <a class="move" id="move1" href="#">
+                    <i class="fa-solid fa-house"></i>
                     <div class="dr" id="dr1">Home</div>
                 </a>
                 <a class="move" id="move2" href="#eduction">
+                    <i class="fa-solid fa-book-open-reader"></i>
                     <div class="dr" id="dr2">Eduction</div>
                 </a>
                 <a class="move" id="move3" href="#project">
+                    <i class="fa-solid fa-hands-holding-circle"></i>
                     <div class="dr" id="dr3">Projects</div>
                 </a>
                 <a class="move" id="move4" href="#experience">
+                    <i class="fa-solid fa-flask"></i>
                     <div class="dr" id="dr4">Experience</div>
                 </a>
                 <a class="move" id="move5">
+                    <i class="fa-solid fa-fill-drip"></i>
                     <div class="dr" id="dr5">Skills</div>
                 </a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="hamburger" id="hamburger"></div>
             </div>
         </nav>
 
@@ -284,7 +293,7 @@
             <div>
                 <h2>FOLLOW ME</h2>
                 <div class="follow-ico">
-                    <a href="https://twitter.com/BahaaAl05923268"><i class="fa-brands fa-twitter" target="_blank"></i></a>
+                    <a href="https://twitter.com/BahaaAl05923268" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://github.com/bahaa12edeen" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/bahaa-aldeen-489081232/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
@@ -301,43 +310,80 @@
     </footer>
 
     <script>
+        /******************************************************************************/
+        document.getElementById('menu-toggle').onclick = (function () {
+            console.log(this.id);
+
+            document.getElementById(this.id).classList.toggle('open');
+            document.getElementById('dor').classList.toggle('dor-open');
+        })
+        /******************************************************************************/
         window.addEventListener("scroll", function(){
             var crl = window.scrollY;
 
-            if(crl >= 100){
-                document.getElementById("dr1").style.setProperty("--first", "black");
-                document.getElementById("dr2").style.setProperty("--first", "black");
-                document.getElementById("dr3").style.setProperty("--first", "black");
-                document.getElementById("dr4").style.setProperty("--first", "black");
-                document.getElementById("dr5").style.setProperty("--first", "black");
-                document.getElementById("menu").style.setProperty("--first", "black");
 
-                document.getElementById("nav").style.color = "black";
-                document.getElementById("move1").setAttribute("class", "scrl");
-                document.getElementById("move2").setAttribute("class", "scrl");
-                document.getElementById("move3").setAttribute("class", "scrl");
-                document.getElementById("move4").setAttribute("class", "scrl");
-                document.getElementById("move5").setAttribute("class", "scrl");
+            if(window.innerWidth > 820){
 
-                document.getElementById("nav").style.backgroundColor = "white";
-                document.getElementById("nav").style.boxShadow = "0 1px 30px 0.1px #6b6b6b";
-            }else{
-                document.getElementById("dr1").style.setProperty("--first", "white");
-                document.getElementById("dr2").style.setProperty("--first", "white");
-                document.getElementById("dr3").style.setProperty("--first", "white");
-                document.getElementById("dr4").style.setProperty("--first", "white");
-                document.getElementById("dr5").style.setProperty("--first", "white");
-                document.getElementById("menu").style.setProperty("--first", "white");
+                if(crl >= 100){
+                    document.querySelector(':root').style.setProperty("--first", "black");
 
-                document.getElementById("nav").style.color = "white";
-                document.getElementById("move1").setAttribute("class", "move");
-                document.getElementById("move2").setAttribute("class", "move");
-                document.getElementById("move3").setAttribute("class", "move");
-                document.getElementById("move4").setAttribute("class", "move");
-                document.getElementById("move5").setAttribute("class", "move");
+                    document.getElementById("logo").style.color = "black";
 
-                document.getElementById("nav").style.backgroundColor = "unset";
-                document.getElementById("nav").style.boxShadow = "none";
+                    // document.getElementById("dr1").style.setProperty("--first", "black");
+                    // document.getElementById("dr2").style.setProperty("--first", "black");
+                    // document.getElementById("dr3").style.setProperty("--first", "black");
+                    // document.getElementById("dr4").style.setProperty("--first", "black");
+                    // document.getElementById("dr5").style.setProperty("--first", "black");
+                    // document.getElementById("menu").style.setProperty("--first", "black");
+    
+                    document.getElementById("nav").style.color = "black";
+                    document.getElementById("move1").classList.add("scrl");
+                    document.getElementById("move2").classList.add("scrl");
+                    document.getElementById("move3").classList.add("scrl");
+                    document.getElementById("move4").classList.add("scrl");
+                    document.getElementById("move5").classList.add("scrl");
+    
+                    document.getElementById("nav").style.backgroundColor = "white";
+                    document.getElementById("nav").style.boxShadow = "0 1px 30px 0.1px #6b6b6b";
+
+                }else{
+                    document.querySelector(':root').style.setProperty("--first", "white");
+
+                    document.getElementById("logo").style.color = "white";
+
+                    // document.getElementById("dr1").style.setProperty("--first", "white");
+                    // document.getElementById("dr2").style.setProperty("--first", "white");
+                    // document.getElementById("dr3").style.setProperty("--first", "white");
+                    // document.getElementById("dr4").style.setProperty("--first", "white");
+                    // document.getElementById("dr5").style.setProperty("--first", "white");
+                    // document.getElementById("menu").style.setProperty("--first", "white");
+                    
+                    document.getElementById("nav").style.color = "white";
+                    document.getElementById("move1").setAttribute("class", "move");
+                    document.getElementById("move2").setAttribute("class", "move");
+                    document.getElementById("move3").setAttribute("class", "move");
+                    document.getElementById("move4").setAttribute("class", "move");
+                    document.getElementById("move5").setAttribute("class", "move");
+                    
+                    document.getElementById("nav").style.backgroundColor = "unset";
+                    document.getElementById("nav").style.boxShadow = "none";
+                }
+
+            }else {
+                if(crl >= 100){
+                    document.querySelector(':root').style.setProperty("--hamburger", "black");
+                    document.getElementById("logo").style.color = "black";
+                    // document.getElementById("dor-open").style.backgroundColor = "#464655 !important";
+                    document.getElementById("nav").style.backgroundColor = "white";
+                    document.getElementById("nav").style.boxShadow = "0 1px 30px 0.1px #6b6b6b";
+                }else{
+                    document.querySelector(':root').style.setProperty("--hamburger", "white");
+                    document.getElementById("logo").style.color = "white";
+                    // document.getElementById("dor-open").style.backgroundColor = "#464655 !important";
+                    document.getElementById("nav").style.backgroundColor = "unset";
+                    document.getElementById("nav").style.boxShadow = "none";
+                }
+
             }
         });
 
