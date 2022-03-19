@@ -511,7 +511,7 @@ footer{
 
 .dor-open{
     /* background-color: #464655; */
-    clip-path: circle(300px at top right) !important;
+    clip-path: circle(200% at top right) !important;
 }
 /*******************************************************************************/
 
@@ -523,7 +523,7 @@ footer{
 
     .dor {
         display: block;
-        width: 40%;
+        width: 50%;
         font-size: larger;
         position: absolute;
         top: 100%;
